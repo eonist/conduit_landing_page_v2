@@ -87,8 +87,8 @@
   cursor: pointer;
   text-align: center;
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  text-underline-offset: auto;
+  text-decoration-thickness: auto;
   transition: background 0.2s, color 0.2s;
 }
 
@@ -99,10 +99,8 @@
 
 .pricing-action--monthly {
   background: #FF007B;
-  color: #fff;
 }
 
 .pricing-action--yearly {
   background: #A600FF;
-  color: #fff;
 }
