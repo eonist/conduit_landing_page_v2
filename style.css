@@ -8,6 +8,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #161616;
   color: #FFF;
+  margin-top: 24px;
 }
 
 .header-logo {
@@ -68,6 +69,16 @@ body {
   gap: 48px;
   align-self: stretch;
   background: rgba(19, 19, 19, 0.00);
+  justify-content: space-between;
+}
+
+.section-5 {
+  flex: 0 0 auto;
+}
+
+.section-5 img {
+  height: 100px;
+  width: auto;
 }
 
 .section-4 {
