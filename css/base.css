@@ -91,3 +91,14 @@ body {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+
+/* Section subtitle style for all section subtitles */
+.section-subtitle {
+  color: var(--color-text-secondary, #999);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
