@@ -1,16 +1,20 @@
-/* blog.css - styles for the blog section */
+/* blog.css - styles for the blog section
+   Only relevant classes for layout and body text are kept. */
 
+/* Container for the blog section */
 .blog-container {
   padding: var(--spacing-large);
   background: transparent;
 }
 
+/* Flex list of blog items */
 .blog-list {
   display: flex;
   gap: var(--spacing-small);
   flex-wrap: wrap;
 }
 
+/* Individual blog card */
 .blog-item {
   background: var(--color-background);
   border-radius: 12px;
@@ -21,6 +25,7 @@
   gap: var(--spacing-small);
 }
 
+/* Description text for each blog post */
 .blog-post-description {
   font-size: 12px;
   color: var(--color-secondary);
@@ -29,6 +34,7 @@
   margin: 0;
 }
 
+/* "Read the post" link style */
 .blog-read-post {
   font-size: 16px;
   font-weight: 500;

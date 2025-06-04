@@ -1,3 +1,6 @@
+/* style.css - global utility classes and legacy Figma-exported styles (cleaned)
+   Only utility classes that are actually used in the HTML are kept. */
+
 @import url('base.css');
 @import url('layout.css');
 @import url('header.css');
@@ -8,10 +11,9 @@
 @import url('download.css');
 @import url('utilities.css');
 
-/* Remove duplicate resets and legacy/unused section classes.
-   Only keep utility classes that are actually used in the HTML. */
-
+/* Typography utility classes */
 .text-white-inter-24px-500 {
+  /* White, Inter font, 24px, medium weight */
   color: #FFF;
   font-family: 'Inter', sans-serif;
   font-size: 24px;
@@ -21,6 +23,7 @@
 }
 
 .text-gray-inter-16px-400 {
+  /* Gray, Inter font, 16px, regular weight */
   color: #999;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -30,6 +33,7 @@
 }
 
 .text-white-inter-48px-500-stretch {
+  /* White, Inter font, 48px, medium weight, stretch */
   align-self: stretch;
   color: #FFF;
   font-family: 'Inter', sans-serif;
@@ -40,6 +44,7 @@
 }
 
 .text-gray-inter-18px-400-stretch {
+  /* Gray, Inter font, 18px, regular weight, stretch */
   align-self: stretch;
   color: #727272;
   font-family: 'Inter', sans-serif;
@@ -50,6 +55,7 @@
 }
 
 .text-gray-inter-12px-400-stretch {
+  /* Gray, Inter font, 12px, regular weight, stretch, centered */
   align-self: stretch;
   color: #727272;
   font-family: 'Inter', sans-serif;
@@ -66,6 +72,7 @@
 }
 
 .text-white-inter-16px-500-underline-stretch {
+  /* White, Inter font, 16px, medium weight, underline, stretch */
   align-self: stretch;
   color: #FFF;
   font-family: 'Inter', sans-serif;
@@ -82,6 +89,7 @@
 }
 
 .text-white-inter-16px-500-right-underline-stretch {
+  /* White, Inter font, 16px, medium weight, underline, right-aligned, stretch */
   align-self: stretch;
   color: #FFF;
   text-align: right;

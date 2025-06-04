@@ -1,17 +1,21 @@
-/* features.css - styles for the features section */
+/* features.css - styles for the features section
+   Only relevant classes for layout and body text are kept. */
 
+/* Container for the features section */
 .features-container {
   padding: var(--spacing-large);
   background: transparent;
   gap: var(--spacing-large);
 }
 
+/* Flex list of feature items */
 .features-list {
   display: flex;
   gap: var(--spacing-small);
   flex-wrap: wrap;
 }
 
+/* Individual feature card */
 .feature-item {
   background: var(--color-background);
   border-radius: 12px;
@@ -22,6 +26,7 @@
   gap: var(--spacing-small);
 }
 
+/* Description text for each feature */
 .feature-description {
   font-size: 12px;
   color: var(--color-secondary);
