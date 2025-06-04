@@ -72,17 +72,23 @@
 
 /* Pricing card action buttons (styled like download button) */
 .pricing-action {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 12px 32px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem 0 0 0;
+  padding: 12px 0;
   border: none;
   border-radius: 8px;
-  font-weight: 600;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary, #007bff);
   cursor: pointer;
   text-align: center;
-  margin-top: 1rem;
-  font-family: 'Inter', Arial, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
   transition: background 0.2s, color 0.2s;
 }
 
