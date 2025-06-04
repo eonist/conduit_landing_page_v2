@@ -164,6 +164,11 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
+}
+
+/* More specific selector for left-aligned text in content boxes */
+.section-8 .text-gray-inter-12px-400-stretch {
   text-align: left;
 }
 
