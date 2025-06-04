@@ -10,16 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+    <link rel="stylesheet" href="css/download.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
     <!-- Header Section: Contains logo, title, and stats -->
     <header class="header">
-      <section class="section-2">
+      <section class="header-container">
         <img src="logo_no_bg.svg" alt="Logo" class="header-logo" />
-        <p class="text-white-inter-24px-500">Conduit</p>
-        <div class="div-flex-1-stretch-bg-d9d9d900"></div>
-        <p class="text-gray-inter-16px-400">
+        <p class="header-title">Conduit</p>
+        <div class="flex-grow-spacer"></div>
+        <p class="header-stats">
           Github stars: 124 - NPM downloads per week. 1.4k
         </p>
       </section>
@@ -29,51 +37,51 @@
     <main>
       <!-- Hero Section: Introduction and main headline -->
       <section class="hero-section">
-        <section class="section-3" style="display: flex; justify-content: space-between; align-items: center;">
-          <section class="section-4" style="flex: 1;">
-            <p class="text-white-inter-48px-500-stretch">
+        <section class="hero-content">
+          <section class="hero-text">
+            <p class="hero-title">
               AI powered design assistant
             </p>
-            <p class="text-gray-inter-18px-400-stretch">
+            <p class="hero-subtitle">
               Use the latest AI models to genrerate designs in figma. Go from
               zero to one with design assets. Create new or edit existing
               designs
             </p>
           </section>
-          <section class="section-5" style="flex: 0 0 auto;">
-            <img src="logo.svg" alt="Hero Logo" style="height: 100px; width: auto;" />
+          <section class="hero-logo">
+            <img src="logo.svg" alt="Hero Logo" />
           </section>
         </section>
       </section>
 
       <!-- Features Section: Steps to use the AI Design Assistant -->
       <section class="features-section">
-        <section class="section-6">
-          <p class="text-white-inter-24px-500">Unleash your creativity</p>
-          <p class="text-gray-inter-18px-400-stretch-height-48px">
+        <section class="features-container">
+          <p class="features-title">Unleash your creativity</p>
+          <p class="features-subtitle">
             See how our AI Design Assistant effortlessly turns your ideas into
             stunning designs—just follow these simple steps.
           </p>
-          <section class="section-7">
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">1. Craft Your Design Vision</p>
-              <p class="text-gray-inter-12px-400-stretch">
+          <section class="features-list">
+            <article class="feature-item">
+              <p class="feature-step">1. Craft Your Design Vision</p>
+              <p class="feature-description">
                 Use ChatGPT to create a detailed design brief with assets,
                 metrics, font choices, and design systems. The more specific
                 your brief, the better the final result will match your vision.
               </p>
             </article>
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">2. Execute with AI Automation</p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="feature-item">
+              <p class="feature-step">2. Execute with AI Automation</p>
+              <p class="feature-description">
                 Watch your AI agent methodically bring your design to life—
                 analyzing requirements, solving complex challenges, and
                 optimizing layouts and workflows for maximum impact.
               </p>
             </article>
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">3. Perfect and export to Code</p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="feature-item">
+              <p class="feature-step">3. Perfect and export to Code</p>
+              <p class="feature-description">
                 Refine your design with prompts and iterations. Create dark/light
                 modes, ensure responsiveness for all devices, and export to HTML
                 + CSS. Add functionality in editors like Cursor or VSCode.
@@ -85,40 +93,40 @@
 
       <!-- Blog Section: Latest insights and posts -->
       <section class="blog-section">
-        <section class="section-6">
-          <p class="text-white-inter-24px-500">Stay inspired with our latest insights</p>
-          <p class="text-gray-inter-18px-400-stretch">
+        <section class="blog-container">
+          <p class="blog-title">Stay inspired with our latest insights</p>
+          <p class="blog-subtitle">
             Explore our blog for the latest trends, tips, and insights in design
             and AI technology. Find inspiration, tutorials, and industry news to
             keep you informed and inspired.
           </p>
-          <section class="section-7">
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">Neue online music</p>
-              <p class="text-gray-inter-12px-400-stretch">
+          <section class="blog-list">
+            <article class="blog-item">
+              <p class="blog-post-title">Neue online music</p>
+              <p class="blog-post-description">
                 Spotify is overloaded—time for a Spotify Lite. Just playlists and
                 music: no AI, podcasts, or videos. Simple and less hassle.
               </p>
-              <div class="div-flex-1-stretch-bg-d9d9d900"></div>
-              <p class="text-white-inter-16px-500-underline-stretch">Read the post</p>
+              <div class="flex-grow-spacer"></div>
+              <p class="blog-read-post">Read the post</p>
             </article>
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">A new kind of AirBnB </p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="blog-item">
+              <p class="blog-post-title">A new kind of AirBnB </p>
+              <p class="blog-post-description">
                 How would Airbnb look if redesigned to focus on what people really
                 use it for: finding affordable stays and trustworthy hosts?
               </p>
-              <div class="div-flex-1-stretch-bg-d9d9d900"></div>
-              <p class="text-white-inter-16px-500-underline-stretch">Read the post</p>
+              <div class="flex-grow-spacer"></div>
+              <p class="blog-read-post">Read the post</p>
             </article>
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">Youtube redesign</p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="blog-item">
+              <p class="blog-post-title">Youtube redesign</p>
+              <p class="blog-post-description">
                 YouTube led the web era but never embraced mobile-first, portrait
                 videos like TikTok. Here’s a look at how things might be if
                 platforms were optimized for mobile from the start.
               </p>
-              <p class="text-white-inter-16px-500-underline-stretch">Read the post</p>
+              <p class="blog-read-post">Read the post</p>
             </article>
           </section>
         </section>
@@ -126,17 +134,17 @@
 
       <!-- Pricing Section: Subscription plans and details -->
       <section class="pricing-section">
-        <section class="section-6">
-          <p class="text-white-inter-24px-500">Affordable pricing for everyone</p>
-          <p class="text-gray-inter-18px-400-stretch">
+        <section class="pricing-container">
+          <p class="pricing-title">Affordable pricing for everyone</p>
+          <p class="pricing-subtitle">
             Choose the ideal plan for your design needs—flexible, valuable pricing
             for everyone from startups to enterprises. Get the most from our
             AI-powered design assistant.
           </p>
-          <section class="section-7">
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">Free ($0)</p>
-              <p class="text-gray-inter-12px-400-stretch">
+          <section class="pricing-list">
+            <article class="pricing-item">
+              <p class="pricing-plan">Free ($0)</p>
+              <p class="pricing-description">
                 Requires running your MCP server in terminal Enjoy instant access to
                 essential features No signup or login required—start right away
                 Ideal for getting started with your designs Includes basic
@@ -145,12 +153,12 @@
                 Raycast For best result use Sonnet 4.0 or Gemini 2.5 pro Different
                 models have different rate limits in AI agent subscriptions
               </p>
-              <div class="div-flex-1-stretch-bg-d9d9d900"></div>
-              <p class="text-white-inter-16px-500-underline-stretch">No purchase required</p>
+              <div class="flex-grow-spacer"></div>
+              <p class="pricing-note">No purchase required</p>
             </article>
-            <article class="section-8">
-              <p class="text-white-inter-24px-500">Monthly $19.99 </p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="pricing-item">
+              <p class="pricing-plan">Monthly $19.99 </p>
+              <p class="pricing-description">
                 Pay-as-you-go: Only $29 per month Remote MCP server access Unlock all
                 essential features Enjoy nearly all Figma capabilities, including
                 gradients and Auto Layout Advanced design system tools included
@@ -161,19 +169,19 @@
                 different rate limits in AI agent subscriptions 30-day,
                 no-questions-asked money-back guarantee
               </p>
-              <p class="text-white-inter-16px-500-underline-stretch">Purchase via stripe</p>
+              <p class="pricing-purchase">Purchase via stripe</p>
             </article>
-            <article class="section-9">
-              <p class="text-white-inter-24px-500">Yearly $99.99</p>
-              <p class="text-gray-inter-12px-400-stretch">
+            <article class="pricing-item">
+              <p class="pricing-plan">Yearly $99.99</p>
+              <p class="pricing-description">
                 Everything in monthly Payed up front $199 Requires using your own AI
                 agent. Github copilot, Cline, Cursor, Claude Desktop, Roo, Raycast
                 For best result use Sonnet 4.0 or Gemini 2.5 pro Different models have
                 different rate limits in AI agent subscriptions 30 day no question
                 asked money back guarantee Save 60% from Monthly
               </p>
-              <div class="div-flex-1-stretch-bg-d9d9d900"></div>
-              <p class="text-white-inter-16px-500-underline-stretch">Purchase via stripe</p>
+              <div class="flex-grow-spacer"></div>
+              <p class="pricing-purchase">Purchase via stripe</p>
             </article>
           </section>
         </section>
@@ -181,21 +189,19 @@
 
       <!-- Download Section: Plugin download and version info -->
       <section class="download-section">
-        <section class="section-6">
-          <p class="text-white-inter-24px-500">Start prompt designing today!</p>
-          <p class="text-gray-inter-18px-400-stretch">
+        <section class="download-container">
+          <p class="download-title">Start prompt designing today!</p>
+          <p class="download-subtitle">
             Install the Figma plugin and login. Start your AI agent (Claude
             Desktop, Github Copilot, Cursor or Raycast) Begin prompt design with
             Figma (Unrestricted on your terms)
           </p>
         </section>
-        <section class="section-10">
-          <section class="section-11">
-            <p class="text-white-inter-16px-500-right-underline-stretch">
-              Download the Figma plugin
-            </p>
+        <section class="download-link">
+          <section class="download-button">
+            <p class="download-link-text">Download the Figma plugin</p>
           </section>
-          <p class="text-gray-inter-12px-400-stretch">Version 1.0.4</p>
+          <p class="download-version">Version 1.0.4</p>
         </section>
       </section>
     </main>

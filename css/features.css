@@ -1,0 +1,51 @@
+/* features.css - styles for the features section */
+
+.features-container {
+  padding: var(--spacing-large);
+  background: transparent;
+  gap: var(--spacing-large);
+}
+
+.features-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.features-subtitle {
+  font-size: 18px;
+  color: var(--color-secondary);
+  margin: 0 0 var(--spacing-large) 0;
+}
+
+.features-list {
+  display: flex;
+  gap: var(--spacing-small);
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: var(--color-background);
+  border-radius: 12px;
+  padding: var(--spacing-xlarge) var(--spacing-medium);
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+.feature-step {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.feature-description {
+  font-size: 12px;
+  color: var(--color-secondary);
+  text-align: left;
+  line-height: 1.4;
+  margin: 0;
+}

@@ -1,0 +1,25 @@
+/* utilities.css - helper classes and common utilities */
+
+.flex-grow-spacer {
+  flex-grow: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}

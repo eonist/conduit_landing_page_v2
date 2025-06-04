@@ -1,0 +1,33 @@
+/* hero.css - styles for the hero section */
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+  gap: var(--spacing-large);
+  background: transparent;
+}
+
+.hero-text {
+  flex: 1;
+  color: var(--color-text-primary);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--color-secondary);
+  margin-top: var(--spacing-small);
+}
+
+.hero-logo img {
+  height: 120px;
+  width: auto;
+}

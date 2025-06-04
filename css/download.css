@@ -1,0 +1,49 @@
+/* download.css - styles for the download section */
+
+.download-container {
+  padding: var(--spacing-large);
+  background: transparent;
+}
+
+.download-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.download-subtitle {
+  font-size: 18px;
+  color: var(--color-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.download-link {
+  display: flex;
+  padding: var(--spacing-medium);
+  gap: var(--spacing-small);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background: var(--color-background);
+}
+
+.download-button {
+  cursor: pointer;
+}
+
+.download-link-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  margin: 0;
+}
+
+.download-version {
+  font-size: 12px;
+  color: var(--color-secondary);
+  margin: 0;
+  text-align: right;
+}
