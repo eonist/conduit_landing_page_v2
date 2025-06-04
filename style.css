@@ -10,6 +10,13 @@ body {
   color: #FFF;
 }
 
+.header-logo {
+  height: 32px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 .section-1 {
   display: flex;
   width: 1220px;
