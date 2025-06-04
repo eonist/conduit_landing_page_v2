@@ -6,15 +6,10 @@
 }
 
 .download-title {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--color-text-primary);
   margin: 0;
 }
 
 .download-subtitle {
-  font-size: 18px;
-  color: var(--color-secondary);
   margin: 0;
   line-height: 1.4;
 }

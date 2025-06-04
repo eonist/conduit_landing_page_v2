@@ -15,15 +15,10 @@
 }
 
 .hero-title {
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.2;
   margin: 0;
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  color: var(--color-secondary);
   margin-top: var(--spacing-small);
 }
 

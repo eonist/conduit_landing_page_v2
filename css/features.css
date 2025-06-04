@@ -7,15 +7,10 @@
 }
 
 .features-title {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--color-text-primary);
   margin: 0;
 }
 
 .features-subtitle {
-  font-size: 18px;
-  color: var(--color-secondary);
   margin: 0 0 var(--spacing-large) 0;
 }
 

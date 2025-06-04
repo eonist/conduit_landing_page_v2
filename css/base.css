@@ -29,3 +29,65 @@ body {
   --spacing-large: 24px;
   --spacing-xlarge: 32px;
 }
+
+/* Common text styles */
+.text-white-inter-24px-500 {
+  color: var(--color-text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-gray-inter-16px-400 {
+  color: var(--color-text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-white-inter-48px-500-stretch {
+  color: var(--color-text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-gray-inter-18px-400-stretch {
+  color: var(--color-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-gray-inter-12px-400-stretch {
+  color: var(--color-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.text-white-inter-16px-500-underline-stretch {
+  color: var(--color-text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
