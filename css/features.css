@@ -3,7 +3,7 @@
 
 /* Container for the features section */
 .features-container {
-  padding: var(--spacing-large);
+  padding: var(--spacing-medium);
   background: transparent;
   gap: var(--spacing-large);
   background-color: blueviolet; /*⚠️️ debug ⚠️️*/

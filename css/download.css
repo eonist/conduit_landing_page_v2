@@ -1,7 +1,7 @@
 /* download.css - styles for the download section */
 
 .download-container {
-  padding: var(--spacing-large);
+  padding: var(--spacing-medium);
   background: transparent;
   background-color: darkgreen; /*⚠️️ debug ⚠️️*/
   gap: var(--spacing-large);

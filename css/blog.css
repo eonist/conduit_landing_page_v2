@@ -3,7 +3,7 @@
 
 /* Container for the blog section */
 .blog-container {
-  padding: var(--spacing-large);
+  padding: var(--spacing-medium);
   background: transparent;
   background-color: mediumvioletred; /*⚠️️ debug ⚠️️*/;
 }

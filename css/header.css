@@ -1,28 +1,17 @@
 /* header.css - styles specific to the header */
 
-.header-link {
-  text-decoration: underline;
-  color: inherit;
-  font-weight: inherit;
-  cursor: pointer;
-}
-
-.download-section .header-link {
-  color: #FFF;
-}
-
 
 /* Header layout */
 .header {
   padding-top: var(--spacing-medium /*large*/);
-  padding-bottom: var(--spacing-medium /*large*/);
+  padding-bottom: var(--spacing-medium /**/);
   background-color: seagreen; /*⚠️️ debug ⚠️️*/
 }
 
 /* Flex container for header content */
 .header-container {
   display: flex;
-  padding: var(--spacing-large /*medium*/);
+  padding: var(--spacing-medium /**/);
   gap: var(--spacing-small);
   background: var(--color-background);
   border-radius: 12px;
@@ -72,4 +61,16 @@
   .header-stats-mobile {
     display: none;
   }
+}
+
+
+.header-link {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.download-section .header-link {
+  color: #FFF;
 }
