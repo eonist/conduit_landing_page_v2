@@ -1,14 +1,24 @@
-/* header.css - styles specific to the header */
+/* ==========================================================================
+   header.css - Styles specific to the header section
+   --------------------------------------------------------------------------
+   This file contains styles for the header, including:
+   - Header layout and container
+   - Logo, title, and stats
+   - Responsive behavior for desktop/mobile stats
+   - Header links
+   ========================================================================== */
 
-
-/* Header layout */
+/* === Header Layout ===
+   Top-level header section with padding and background.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .header {
-  padding-top: var(--spacing-medium /*large*/);
+  padding-top: var(--spacing-medium /* large */);
   padding-bottom: var(--spacing-medium /**/);
-  background-color: seagreen; /*⚠️️ debug ⚠️️*/
+  background-color: seagreen; /* ⚠️ debug: override for development, revert to var(--color-background) for production */
 }
 
-/* Flex container for header content */
+/* === Header Container: Flex container for header content ===
+   Arranges logo, title, stats, and links horizontally. */
 .header-container {
   display: flex;
   padding: var(--spacing-medium /**/);
@@ -16,35 +26,45 @@
   background: var(--color-background);
   border-radius: 12px;
   align-items: center;
-  
 }
 
+/* === Header Logo: Logo image in the header ===
+   Sets logo size and alignment.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .header-logo {
   height: 32px;
   width: auto;
   margin-right: var(--spacing-small);
   vertical-align: middle;
-  background-color: orange; /*⚠️️ debug ⚠️️*/
+  background-color: orange; /* ⚠️ debug: override for development */
 }
 
+/* === Header Title: Main title in the header ===
+   NOTE: background-color is set for debugging; remove or update for production. */
 .header-title {
   color: var(--color-text-primary);
-  background-color: orangered; /*⚠️️ debug ⚠️️*/
+  background-color: orangered; /* ⚠️ debug: override for development */
 }
 
+/* === Header Stats: Stats text in the header ===
+   Shows GitHub stars and NPM downloads.
+   NOTE: background-color is commented out for debugging. */
 .header-stats {
   color: var(--color-text-secondary);
-  /*background-color: purple; *//*⚠️️ debug ⚠️️*/
+  /* background-color: purple; *//* ⚠️ debug */
 }
 
+/* === Header Stats Value: Highlighted stat numbers === */
 .header-stats-value {
   color: #FFF;
 }
 
+/* === Header Stats Mobile: Only visible on mobile === */
 .header-stats-mobile {
   display: none;
 }
 
+/* === Responsive: Show/hide stats for desktop/mobile === */
 @media (max-width: 768px) {
   .header-stats-desktop {
     display: none;
@@ -63,7 +83,7 @@
   }
 }
 
-
+/* === Header Link: Styled links in the header === */
 .header-link {
   text-decoration: underline;
   color: inherit;
@@ -71,6 +91,7 @@
   cursor: pointer;
 }
 
+/* === Download Section Header Link: Override for download section === */
 .download-section .header-link {
   color: #FFF;
 }

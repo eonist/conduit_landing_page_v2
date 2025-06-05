@@ -1,35 +1,45 @@
-/* pricing.css - styles for the pricing section
-   Only relevant classes for layout and body text are kept. */
+/* ==========================================================================
+   pricing.css - Styles for the pricing section
+   --------------------------------------------------------------------------
+   This file contains styles for the pricing section, including:
+   - Pricing section container
+   - Pricing card layout and appearance
+   - Pricing features, notes, and action buttons
+   ========================================================================== */
 
-/* Container for the pricing section */
+/* === Pricing Section Container ===
+   Wraps the pricing section for padding and background.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .pricing-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: #007bff; /*⚠️️ debug ⚠️️*/
+  background-color: #007bff; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
-/* Flex list of pricing items (ul) */
+/* === Pricing List: Flex container for pricing cards (ul) ===
+   Arranges pricing items in a responsive row with spacing. */
 .pricing-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: var(--spacing-medium/*small*/);
+  gap: var(--spacing-medium /* small */);
   flex-wrap: wrap;
 }
 
-/* Individual pricing card */
+/* === Pricing Item: Individual pricing card (li) ===
+   Card appearance, padding, and layout for each pricing plan. */
 .pricing-item {
   background: var(--color-background);
   border-radius: 12px;
   padding: var(--spacing-xlarge) var(--spacing-medium);
-  flex: 1 1 30%;
+  flex: 1 1 30%; /* Responsive: 3 cards per row, shrink/grow as needed */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-small);
 }
 
-/* Description text for each pricing plan */
+/* === Pricing Description: Text for each pricing plan === */
 .pricing-description {
   font-size: 12px;
   color: var(--color-secondary);
@@ -38,7 +48,7 @@
   margin: 0;
 }
 
-/* Note text for free plan */
+/* === Pricing Note: Note text for free plan === */
 .pricing-note {
   font-size: 16px;
   font-weight: 500;
@@ -46,7 +56,7 @@
   margin: 0;
 }
 
-/* "Purchase via stripe" link style */
+/* === Pricing Purchase: "Purchase via stripe" link style === */
 .pricing-purchase {
   font-size: 16px;
   font-weight: 500;
@@ -56,7 +66,7 @@
   margin: 0;
 }
 
-/* Feature list inside each pricing card */
+/* === Pricing Features: Feature list inside each pricing card === */
 .pricing-features {
   margin: 0 0 1rem 0;
   padding-left: 1.25rem;
@@ -70,7 +80,8 @@
   margin-bottom: 0.5rem;
 }
 
-/* Pricing card action buttons (styled like download button) */
+/* === Pricing Action: Card action buttons (styled like download button) ===
+   Variants for free, monthly, and yearly plans. */
 .pricing-action {
   width: 100%;
   box-sizing: border-box;
@@ -79,12 +90,12 @@
   padding: 12px 0;
   border: none;
   border-radius: 8px;
-  /*font-family: 'Inter', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;*/
+  /* font-family: 'Inter', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 600; */
   font-size: 16px;
   font-weight: 500;
-  color: #000; /*#fff*/
+  color: #000; /* #fff */
   background: var(--color-primary, #007bff);
   cursor: pointer;
   text-align: center;
@@ -94,16 +105,17 @@
   transition: background 0.2s, color 0.2s;
 }
 
+/* === Pricing Action Variants === */
 .pricing-action--free {
-  background: #FFF; /*#FF5900*/
+  background: #FFF; /* #FF5900 */
   color: #000;
   text-decoration: none;
 }
 
 .pricing-action--monthly {
-  background: #FFF;/*#FF007B*/
+  background: #FFF; /* #FF007B */
 }
 
 .pricing-action--yearly {
-  background: #FFF;/*#A600FF*/
+  background: #FFF; /* #A600FF */
 }

@@ -1,21 +1,37 @@
-/* download.css - styles for the download section */
+/* ==========================================================================
+   download.css - Styles for the download section
+   --------------------------------------------------------------------------
+   This file contains styles for the download section, including:
+   - Download section container
+   - Download button and link styles
+   - Version and requirement notes
+   ========================================================================== */
 
+/* === Download Section Container ===
+   Wraps the download section for padding and background.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .download-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: darkgreen; /*⚠️️ debug ⚠️️*/
+  background-color: darkgreen; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
   gap: var(--spacing-large);
 }
 
+/* === Download Title ===
+   Styles the main title for the download section. */
 .download-title {
-  /*margin: 0;*/
+  /* margin: 0; */
 }
 
+/* === Download Subtitle ===
+   Styles the subtitle for the download section. */
 .download-subtitle {
-  /*margin: 0;
-  line-height: 1.4;*/
+  /* margin: 0;
+     line-height: 1.4; */
 }
 
+/* === Download Link Container ===
+   Container for the download button and version info. */
 .download-link {
   display: block;
   width: 100%;
@@ -26,38 +42,46 @@
   background: var(--color-background);
 }
 
+/* === Download Button ===
+   Main call-to-action button for downloading the plugin. */
 .download-button {
   display: inline-block;
   margin: 0 auto;
   padding: 12px 32px;
   cursor: pointer;
-  background: #FFF; /*#FF5900*/
+  background: #FFF; /* #FF5900 */
   color: #161616;
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
 }
 
+/* === Download Link Text ===
+   Text inside the download button. */
 .download-link-text {
   font-size: 16px;
   font-weight: 500;
-  color: #000; /*#161616*/
+  color: #000; /* #161616 */
   text-decoration: underline;
   margin: 0;
 }
 
+/* === Download Version Info ===
+   Displays the plugin version number. */
 .download-version {
   font-size: 12px;
   color: var(--color-secondary);
   margin-top: 12px;
   text-align: center;
-  /*background-color: pink;*/
+  /* background-color: pink; */
 }
 
+/* === Download Requirement Note ===
+   Displays requirements for using the plugin. */
 .download-require {
   font-size: 12px;
   color: var(--color-secondary);
   margin-bottom: 12px;
   text-align: center;
-  /*background-color: green;*/
+  /* background-color: green; */
 }

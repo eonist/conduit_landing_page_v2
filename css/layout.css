@@ -1,4 +1,14 @@
-/* Responsive container for max width and centering */
+/* ==========================================================================
+   layout.css - Responsive container and flex layouts
+   --------------------------------------------------------------------------
+   This file contains layout utilities, including:
+   - Responsive container for max width and centering
+   - Flex layouts for features, blog, and pricing lists
+   - Media queries for mobile responsiveness
+   ========================================================================== */
+
+/* === Container: Responsive max-width and centering ===
+   Used to center content and constrain width on large screens. */
 .container {
   width: 960px;
   min-width: 960px;
@@ -8,7 +18,8 @@
   padding-right: var(--spacing-medium);
 }
 
-/* Responsive flex layouts */
+/* === Flex Layouts: Horizontal row for feature, blog, and pricing lists ===
+   Arranges items in a row with spacing. */
 .features-list,
 .blog-list,
 .pricing-list {
@@ -17,6 +28,7 @@
   gap: 24px;
 }
 
+/* === Responsive: Adjust container and flex layouts for small screens === */
 @media (max-width: 600px) {
   .container {
     width: 100%;

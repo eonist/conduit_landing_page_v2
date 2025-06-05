@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conduit Landing Page</title>
+    <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts: Inter -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Main stylesheet (imports all section and utility CSS) -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header Section: Contains logo, title, and stats -->
+    <!-- =========================
+         Header Section: Contains logo, title, and stats
+         ========================= -->
     <header class="header">
       <div class="container">
         <section class="header-container">
+          <!-- Logo (SVG) -->
           <img src="logo_no_bg.svg" alt="Logo" class="header-logo" />
+          <!-- Site Title -->
           <h1 class="header-title">Conduit</h1>
+          <!-- Flex spacer for layout alignment -->
           <div class="flex-grow-spacer"></div>
+          <!-- Desktop Stats: GitHub stars and NPM downloads -->
           <p class="header-stats header-stats-desktop">
             <a href="https://github.com/eonist/conduit" class="header-link" target="_blank" rel="noopener">Github stars:</a>
             <span class="header-stats-value">124</span>
@@ -27,6 +36,7 @@
             <a href="https://www.npmjs.com/package/conduit-design" class="header-link" target="_blank" rel="noopener">NPM downloads per week:</a>
             <span class="header-stats-value">1.4k</span>
           </p>
+          <!-- Mobile Stats: Condensed for small screens -->
           <p class="header-stats header-stats-mobile">
             <a href="https://github.com/eonist/conduit" class="header-link" target="_blank" rel="noopener">Github:</a>
             <span class="header-stats-value">124</span>
@@ -37,11 +47,16 @@
       </div>
     </header>
 
-    <!-- Main Content Start -->
+    <!-- =========================
+         Main Content Start
+         ========================= -->
     <main>
-      <!-- Hero Section: Introduction and main headline -->
+      <!-- =========================
+           Hero Section: Introduction and main headline
+           ========================= -->
       <section class="hero-section container">
         <section class="hero-content">
+          <!-- Hero Text: Headline and subtitle -->
           <section class="hero-text">
             <h2 class="hero-title">
               AI powered design assistant
@@ -52,13 +67,16 @@
               designs
             </p>
           </section>
+          <!-- Hero Logo: Large logo image -->
           <section class="hero-logo">
             <img src="logo.svg" alt="Hero Logo" />
           </section>
         </section>
       </section>
 
-      <!-- Features Section: Steps to use the AI Design Assistant -->
+      <!-- =========================
+           Features Section: Steps to use the AI Design Assistant
+           ========================= -->
       <section class="features-section container">
         <section class="features-container">
           <h2 class="features-title">Unleash your creativity</h2>
@@ -66,7 +84,9 @@
             See how our AI Design Assistant effortlessly turns your ideas into
             stunning designs—just follow these simple steps.
           </p>
+          <!-- Features List: Contains individual feature cards -->
           <section class="features-list">
+            <!-- Feature Item: Step 1 -->
             <article class="feature-item">
               <h3 class="feature-step">1. Craft Your Design Vision</h3>
               <p class="feature-description">
@@ -75,6 +95,7 @@
                 your brief, the better the final result will match your vision.
               </p>
             </article>
+            <!-- Feature Item: Step 2 -->
             <article class="feature-item">
               <h3 class="feature-step">2. Execute with AI Automation</h3>
               <p class="feature-description">
@@ -83,6 +104,7 @@
                 optimizing layouts and workflows for maximum impact.
               </p>
             </article>
+            <!-- Feature Item: Step 3 -->
             <article class="feature-item">
               <h3 class="feature-step">3. Perfect and export to Code</h3>
               <p class="feature-description">
@@ -95,7 +117,9 @@
         </section>
       </section>
 
-      <!-- Blog Section: Latest insights and posts -->
+      <!-- =========================
+           Blog Section: Latest insights and posts
+           ========================= -->
       <section class="blog-section container">
         <section class="blog-container">
           <h2 class="blog-title">Stay inspired with our latest insights</h2>
@@ -104,7 +128,9 @@
             and AI technology. Find inspiration, tutorials, and industry news to
             keep you informed and inspired.
           </p>
+          <!-- Blog List: Contains individual blog post cards -->
           <section class="blog-list">
+            <!-- Blog Item: Single blog post card -->
             <article class="blog-item">
               <h3 class="blog-post-title">Neue online music</h3>
               <p class="blog-post-description">
@@ -114,6 +140,7 @@
               <div class="flex-grow-spacer"></div>
               <p class="blog-read-post">Read the post</p>
             </article>
+            <!-- Blog Item: Single blog post card -->
             <article class="blog-item">
               <h3 class="blog-post-title">A new kind of AirBnB </h3>
               <p class="blog-post-description">
@@ -123,6 +150,7 @@
               <div class="flex-grow-spacer"></div>
               <p class="blog-read-post">Read the post</p>
             </article>
+            <!-- Blog Item: Single blog post card -->
             <article class="blog-item">
               <h3 class="blog-post-title">Youtube redesign</h3>
               <p class="blog-post-description">
@@ -136,7 +164,9 @@
         </section>
       </section>
 
-      <!-- Pricing Section: Subscription plans and details -->
+      <!-- =========================
+           Pricing Section: Subscription plans and details
+           ========================= -->
       <section class="pricing-section container">
         <section class="pricing-container">
           <h2 class="pricing-title">Affordable pricing for everyone</h2>
@@ -145,9 +175,12 @@
             for everyone from startups to enterprises. Get the most from our
             AI-powered design assistant.
           </p>
+          <!-- Pricing List: Contains individual pricing cards -->
           <ul class="pricing-list">
+            <!-- Pricing Item: Free plan -->
             <li class="pricing-item">
               <h3 class="pricing-plan">Free</h3>
+              <!-- Feature List: Features included in the free plan -->
               <ul class="pricing-features">
                 <li>Run MCP server locally in your terminal</li>
                 <li>Access to all features</li>
@@ -158,8 +191,10 @@
               <div class="flex-grow-spacer"></div>
               <button class="pricing-action pricing-action--free">No purchase required</button>
             </li>
+            <!-- Pricing Item: Monthly plan -->
             <li class="pricing-item">
               <h3 class="pricing-plan">Monthly ($19/mo)</h3>
+              <!-- Feature List: Features included in the monthly plan -->
               <ul class="pricing-features">
                 <li>Remote MCP server access (Easy plug and play setup)</li>
                 <li>Access to all features</li>
@@ -170,8 +205,10 @@
               <div class="flex-grow-spacer"></div>
               <button class="pricing-action pricing-action--monthly">Purchase via stripe</button>
             </li>
+            <!-- Pricing Item: Yearly plan -->
             <li class="pricing-item">
               <h3 class="pricing-plan">Yearly ($99 annually)</h3>
+              <!-- Feature List: Features included in the yearly plan -->
               <ul class="pricing-features">
                 <li>More than half off the monthly price (~$8.25/mo)</li>
                 <li>Remote MCP server access (Easy plug and play setup)</li>
@@ -187,7 +224,9 @@
         </section>
       </section>
 
-      <!-- Download Section: Plugin download and version info -->
+      <!-- =========================
+           Download Section: Plugin download and version info
+           ========================= -->
       <section class="download-section container">
         <section class="download-container">
           <h2 class="download-title">Start prompt designing today!</h2>
@@ -200,11 +239,15 @@
             Begin prompt design with
             Figma (Unrestricted and on your terms)
           </p>
+          <!-- Download Link: Contains button and version info -->
           <section class="download-link">
+            <!-- Requirement Note: Figma version requirement -->
             <p class="download-require">Requires running the latest Figma</p>
+            <!-- Download Button: Main call-to-action -->
             <section class="download-button">
               <p class="download-link-text">Download the Figma plugin</p>
             </section>
+            <!-- Version Info: Plugin version number -->
             <p class="download-version">Version 1.0.4</p>
           </section>
         </section>

@@ -1,32 +1,51 @@
-/* hero.css - styles for the hero section */
+/* ==========================================================================
+   hero.css - Styles for the hero section
+   --------------------------------------------------------------------------
+   This file contains styles for the hero section, including:
+   - Hero content layout (flex)
+   - Hero image and text
+   - Hero title and subtitle
+   - Hero logo
+   ========================================================================== */
 
+/* === Hero Content: Flex container for hero text and image ===
+   Arranges hero text and image side by side with spacing.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-medium /*medium*/);
+  padding: var(--spacing-medium /* medium */);
   gap: var(--spacing-large);
   background: transparent;
-  background-color: blue; /*⚠️️ debug ⚠️️*/
+  background-color: blue; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
+/* === Hero Image: Container for hero image ===
+   Allows image to grow/shrink with flex. */
 .hero-image {
   flex: 1;
 }
 
+/* === Hero Text: Container for hero headline and subtitle ===
+   Allows text to grow/shrink with flex. */
 .hero-text {
   flex: 1;
   color: var(--color-text-primary);
 }
 
+/* === Hero Title: Main headline in the hero section === */
 .hero-title {
   margin: 0;
 }
 
+/* === Hero Subtitle: Subheading in the hero section === */
 .hero-subtitle {
   margin-top: var(--spacing-small);
 }
 
+/* === Hero Logo: Logo image in the hero section ===
+   Sets logo size and maintains aspect ratio. */
 .hero-logo img {
   height: 120px;
   width: auto;

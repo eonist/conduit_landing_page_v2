@@ -1,39 +1,49 @@
-/* base.css - global resets, typography, variables */
+/* ==========================================================================
+   base.css - Global resets, typography, and CSS variables
+   --------------------------------------------------------------------------
+   This file sets up the foundational styles for the site, including:
+   - CSS resets for consistent rendering
+   - Global typography
+   - CSS custom properties (variables) for colors and spacing
+   ========================================================================== */
 
+/* === CSS Reset: Remove default margin/padding and set box-sizing === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* === Body: Base font, background, and text color === */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #161616;
+  background-color: chocolate; /* ⚠️ debug: override for development, revert to var(--color-background) for production */
   color: #FFF;
   margin: 0;
-  /*margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;*/
+  /* margin-top: 16px;
+     margin-left: 16px;
+     margin-right: 16px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background-color: chocolate;/*⚠️️ debug ⚠️️*/
   overflow-x: auto;
 }
 
-/* Define CSS variables for colors and spacing */
+/* === CSS Variables: Define color and spacing tokens for reuse === */
 :root {
-  --color-primary: #FF5900;
-  --color-secondary: #727272;
-  --color-background: #1C1C1C;
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #999999;
+  --color-primary: #FF5900;         /* Brand accent color */
+  --color-secondary: #727272;       /* Secondary text color */
+  --color-background: #1C1C1C;      /* Main background color */
+  --color-text-primary: #FFFFFF;    /* Main text color */
+  --color-text-secondary: #999999;  /* Subdued text color */
   --spacing-small: 8px;
   --spacing-medium: 16px;
   --spacing-large: 24px;
   --spacing-xlarge: 32px;
 }
 
-/* Common text styles */
+/* === Typography Utility Classes === */
+
+/* White text, Inter font, 24px, medium weight */
 .text-white-inter-24px-500 {
   color: var(--color-text-primary);
   font-family: 'Inter', sans-serif;
@@ -43,6 +53,7 @@ body {
   line-height: normal;
 }
 
+/* Gray text, Inter font, 16px, regular weight */
 .text-gray-inter-16px-400 {
   color: var(--color-text-secondary);
   font-family: 'Inter', sans-serif;
@@ -52,6 +63,7 @@ body {
   line-height: normal;
 }
 
+/* White text, Inter font, 48px, medium weight, stretch */
 .text-white-inter-48px-500-stretch {
   color: var(--color-text-primary);
   font-family: 'Inter', sans-serif;
@@ -61,6 +73,7 @@ body {
   line-height: normal;
 }
 
+/* Gray text, Inter font, 18px, regular weight, stretch */
 .text-gray-inter-18px-400-stretch {
   color: var(--color-secondary);
   font-family: 'Inter', sans-serif;
@@ -70,6 +83,7 @@ body {
   line-height: normal;
 }
 
+/* Gray text, Inter font, 12px, regular weight, stretch, centered */
 .text-gray-inter-12px-400-stretch {
   color: var(--color-secondary);
   font-family: 'Inter', sans-serif;
@@ -80,6 +94,7 @@ body {
   text-align: center;
 }
 
+/* White text, Inter font, 16px, medium weight, underline, stretch */
 .text-white-inter-16px-500-underline-stretch {
   color: var(--color-text-primary);
   font-family: 'Inter', sans-serif;
@@ -95,7 +110,7 @@ body {
   text-underline-position: from-font;
 }
 
-/* Section subtitle style for all section subtitles */
+/* === Section Subtitle: Used for all section subtitles === */
 .section-subtitle {
   color: var(--color-text-secondary, #999);
   font-size: 1rem;

@@ -1,35 +1,46 @@
-/* features.css - styles for the features section
-   Only relevant classes for layout and body text are kept. */
+/* ==========================================================================
+   features.css - Styles for the features section
+   --------------------------------------------------------------------------
+   This file contains styles for the features section, including:
+   - Features section container
+   - Feature card layout and appearance
+   - Feature description text
+   ========================================================================== */
 
-/* Container for the features section */
+/* === Features Section Container ===
+   Wraps the features section for padding and background.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .features-container {
   padding: var(--spacing-medium);
   background: transparent;
   gap: var(--spacing-large);
-  background-color: blueviolet; /*⚠️️ debug ⚠️️*/
+  background-color: blueviolet; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
-/* Flex list of feature items */
+/* === Features List: Flex container for feature cards ===
+   Arranges feature items in a responsive row with spacing. */
 .features-list {
   display: flex;
-  gap: var(--spacing-medium/*small*/);
+  gap: var(--spacing-medium /* small */);
   flex-wrap: wrap;
 }
 
-/* Individual feature card */
+/* === Feature Item: Individual feature card ===
+   Card appearance, padding, and layout for each feature. */
 .feature-item {
   background: var(--color-background);
   border-radius: 12px;
   padding: var(--spacing-xlarge) var(--spacing-medium);
-  flex: 1 1 30%;
+  flex: 1 1 30%; /* Responsive: 3 cards per row, shrink/grow as needed */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-small);
 }
 
-/* Description text for each feature */
+/* === Feature Description ===
+   Styles the main text for each feature. */
 .feature-description {
-  /*font-size: 12px;*/
+  /* font-size: 12px; */
   font-size: 0.8rem;
   color: var(--color-secondary);
   text-align: left;

@@ -1,34 +1,45 @@
-/* blog.css - styles for the blog section
-   Only relevant classes for layout and body text are kept. */
+/* ==========================================================================
+   blog.css - Styles for the blog section
+   --------------------------------------------------------------------------
+   This file contains styles for the blog section, including:
+   - Blog section container
+   - Blog card layout and appearance
+   - Blog post description and links
+   ========================================================================== */
 
-/* Container for the blog section */
+/* === Blog Section Container ===
+   Wraps the entire blog section for padding and background.
+   NOTE: background-color is set for debugging; remove or update for production. */
 .blog-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: mediumvioletred; /*⚠️️ debug ⚠️️*/;
+  background-color: mediumvioletred; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
-/* Flex list of blog items */
+/* === Blog List: Flex container for blog cards ===
+   Arranges blog items in a responsive row with spacing. */
 .blog-list {
   display: flex;
-  gap: var(--spacing-medium /*small*/);
+  gap: var(--spacing-medium /* small */);
   flex-wrap: wrap;
 }
 
-/* Individual blog card */
+/* === Blog Item: Individual blog card ===
+   Card appearance, padding, and layout for each blog post. */
 .blog-item {
   background: var(--color-background);
   border-radius: 12px;
   padding: var(--spacing-xlarge) var(--spacing-medium);
-  flex: 1 1 30%;
+  flex: 1 1 30%; /* Responsive: 3 cards per row, shrink/grow as needed */
   display: flex;
   flex-direction: column;
   gap: var(--spacing-medium);
 }
 
-/* Description text for each blog post */
+/* === Blog Post Description ===
+   Styles the main text for each blog post. */
 .blog-post-description {
-  /*font-size: 12px;*/
+  /* font-size: 12px; */
   font-size: 0.8rem;
   color: var(--color-secondary);
   text-align: left;
@@ -36,7 +47,8 @@
   margin: 0;
 }
 
-/* "Read the post" link style */
+/* === "Read the post" Link Style ===
+   Styles the call-to-action link for each blog post. */
 .blog-read-post {
   font-size: 16px;
   font-weight: 500;

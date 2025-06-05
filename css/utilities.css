@@ -1,9 +1,18 @@
-/* utilities.css - helper classes and common utilities */
+/* ==========================================================================
+   utilities.css - Helper classes and common utilities
+   --------------------------------------------------------------------------
+   This file contains utility classes for common layout and text helpers.
+   Use these classes to quickly apply common CSS properties in HTML.
+   ========================================================================== */
 
+/* === Flex Grow Spacer: Expands to fill available flex space ===
+   Useful for pushing elements apart in a flex container. */
 .flex-grow-spacer {
   flex-grow: 1;
 }
 
+/* === Text Alignment Utilities ===
+   Center, left, or right align text content. */
 .text-center {
   text-align: center;
 }
@@ -16,10 +25,13 @@
   text-align: right;
 }
 
+/* === Cursor Pointer: Show pointer cursor on hover ===
+   Useful for clickable elements. */
 .cursor-pointer {
   cursor: pointer;
 }
 
+/* === Underline: Add underline to text === */
 .underline {
   text-decoration: underline;
 }
