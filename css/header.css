@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.download-section .header-link {
+  color: #FFF;
+}
+
 
 /* Header layout */
 .header {
