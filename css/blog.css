@@ -11,7 +11,7 @@
 /* Flex list of blog items */
 .blog-list {
   display: flex;
-  gap: var(--spacing-small);
+  gap: var(--spacing-medium /*small*/);
   flex-wrap: wrap;
 }
 
