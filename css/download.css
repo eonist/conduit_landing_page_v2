@@ -16,8 +16,10 @@
 
 .download-link {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
-  padding: var(--spacing-medium);
+  padding: var(--spacing-large);
   border-radius: 12px;
   background: var(--color-background);
 }
