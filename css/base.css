@@ -10,11 +10,13 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #161616;
   color: #FFF;
-  margin-top: 16px;
+  margin: 0;
+  /*margin-top: 16px;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 16px;*/
   line-height: 1.5;
   letter-spacing: 0.02em;
+  background-color: chocolate;/*⚠️️ debug ⚠️️*/
 }
 
 /* Define CSS variables for colors and spacing */

@@ -10,7 +10,7 @@
 /* Flex container for header content */
 .header-container {
   display: flex;
-  padding: var(--spacing-medium);
+  padding: var(--spacing-large /*medium*/);
   gap: var(--spacing-small);
   background: var(--color-background);
   border-radius: 12px;
@@ -23,12 +23,15 @@
   width: auto;
   margin-right: var(--spacing-small);
   vertical-align: middle;
+  background-color: orange; /*⚠️️ debug ⚠️️*/
 }
 
 .header-title {
   color: var(--color-text-primary);
+  background-color: orangered; /*⚠️️ debug ⚠️️*/
 }
 
 .header-stats {
   color: var(--color-text-secondary);
+  background-color: purple; /*⚠️️ debug ⚠️️*/
 }

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-medium);
+  padding: var(--spacing-large /*medium*/);
   gap: var(--spacing-large);
   background: transparent;
   background-color: blue; /*⚠️️ debug ⚠️️*/
