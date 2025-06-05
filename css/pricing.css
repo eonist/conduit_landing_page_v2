@@ -5,9 +5,9 @@
 .pricing-container {
   padding: var(--spacing-large);
   background: transparent;
+  background-color: #007bff; /*⚠️️ debug ⚠️️*/
 }
 
-/* Flex list of pricing items */
 /* Flex list of pricing items (ul) */
 .pricing-list {
   list-style: none;

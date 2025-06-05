@@ -6,6 +6,7 @@
   padding: var(--spacing-large);
   background: transparent;
   gap: var(--spacing-large);
+  background-color: blueviolet; /*⚠️️ debug ⚠️️*/
 }
 
 /* Flex list of feature items */

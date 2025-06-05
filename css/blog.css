@@ -5,6 +5,7 @@
 .blog-container {
   padding: var(--spacing-large);
   background: transparent;
+  background-color: mediumvioletred; /*⚠️️ debug ⚠️️*/;
 }
 
 /* Flex list of blog items */

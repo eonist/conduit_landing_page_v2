@@ -3,15 +3,17 @@
 .download-container {
   padding: var(--spacing-large);
   background: transparent;
+  background-color: darkgreen; /*⚠️️ debug ⚠️️*/
+  gap: var(--spacing-large);
 }
 
 .download-title {
-  margin: 0;
+  /*margin: 0;*/
 }
 
 .download-subtitle {
-  margin: 0;
-  line-height: 1.4;
+  /*margin: 0;
+  line-height: 1.4;*/
 }
 
 .download-link {
@@ -19,7 +21,7 @@
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  padding: 0;
+  padding: var(--spacing-large);
   border-radius: 12px;
   background: var(--color-background);
 }
