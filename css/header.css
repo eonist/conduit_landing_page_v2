@@ -1,5 +1,23 @@
 /* header.css - styles specific to the header */
 
+/* Header layout */
+.header {
+  padding-top: var(--spacing-medium /*large*/);
+  padding-bottom: var(--spacing-medium /*large*/);
+  background-color: seagreen; /*⚠️️ debug ⚠️️*/
+}
+
+/* Flex container for header content */
+.header-container {
+  display: flex;
+  padding: var(--spacing-medium);
+  gap: var(--spacing-small);
+  background: var(--color-background);
+  border-radius: 12px;
+  align-items: center;
+  
+}
+
 .header-logo {
   height: 32px;
   width: auto;
