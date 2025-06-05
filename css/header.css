@@ -1,6 +1,8 @@
-/* header.css - styles specific to the header */.header-stats-mobile .header-link {
-  text-decoration: underline !important;
-  color: inherit !important;
+/* header.css - styles specific to the header */
+
+.header-link {
+  text-decoration: underline;
+  color: inherit;
   font-weight: inherit;
   cursor: pointer;
 }
@@ -39,7 +41,7 @@
 
 .header-stats {
   color: var(--color-text-secondary);
-  background-color: purple; /*⚠️️ debug ⚠️️*/
+  /*background-color: purple; *//*⚠️️ debug ⚠️️*/
 }
 
 .header-stats-value {
