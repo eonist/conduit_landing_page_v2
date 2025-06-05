@@ -1,4 +1,10 @@
-/* header.css - styles specific to the header */
+/* header.css - styles specific to the header */.header-stats-mobile .header-link {
+  text-decoration: underline !important;
+  color: inherit !important;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
 
 /* Header layout */
 .header {
