@@ -35,3 +35,7 @@
   color: var(--color-text-secondary);
   background-color: purple; /*⚠️️ debug ⚠️️*/
 }
+
+.header-stats-value {
+  color: #FFF;
+}
