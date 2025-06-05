@@ -39,3 +39,25 @@
 .header-stats-value {
   color: #FFF;
 }
+
+.header-stats-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-stats-desktop {
+    display: none;
+  }
+  .header-stats-mobile {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-stats-desktop {
+    display: inline;
+  }
+  .header-stats-mobile {
+    display: none;
+  }
+}

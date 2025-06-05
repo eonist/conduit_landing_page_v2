@@ -1,7 +1,24 @@
-/* layout.css - layout-related styles (containers, grids, flexbox)
-   Only layout classes that are actually used in the HTML are kept. */
+/* Responsive container for max width and centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
-/* Utility: grows to fill available flex space */
-.flex-grow-spacer {
-  flex-grow: 1;
+/* Responsive flex layouts */
+.features-list,
+.blog-list,
+.pricing-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .features-list,
+  .blog-list,
+  .pricing-list {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
