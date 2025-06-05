@@ -27,8 +27,8 @@
   margin: 0 auto;
   padding: 12px 32px;
   cursor: pointer;
-  background: var(--color-primary, #007bff);
-  color: #fff;
+  background: #FFF; /*#FF5900*/
+  color: #161616;
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
@@ -37,7 +37,7 @@
 .download-link-text {
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-text-primary);
+  color: #000; /*#161616*/
   text-decoration: underline;
   margin: 0;
 }

@@ -28,7 +28,8 @@
 
 /* Description text for each feature */
 .feature-description {
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: 0.8rem;
   color: var(--color-secondary);
   text-align: left;
   line-height: 1.4;

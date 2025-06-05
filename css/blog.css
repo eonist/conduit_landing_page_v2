@@ -27,7 +27,8 @@
 
 /* Description text for each blog post */
 .blog-post-description {
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: 0.8rem;
   color: var(--color-secondary);
   text-align: left;
   line-height: 1.4;
