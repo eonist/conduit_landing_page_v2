@@ -1,9 +1,10 @@
 /* Responsive container for max width and centering */
 .container {
-  width: 1024px;
-  min-width: 1024px;
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
 }
 
 /* Responsive flex layouts */
@@ -15,11 +16,10 @@
   gap: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .container {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 @media (max-width: 600px) {
