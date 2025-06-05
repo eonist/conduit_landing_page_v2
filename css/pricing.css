@@ -109,7 +109,9 @@
 .pricing-action--free {
   background: #FFF; /* #FF5900 */
   color: #000;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: auto;
+  text-decoration-thickness: auto;
 }
 
 .pricing-action--monthly {
