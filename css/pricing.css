@@ -96,7 +96,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #000; /* #fff */
-  background: var(--color-primary, #007bff);
+  background: #FFF;
   cursor: pointer;
   text-align: center;
   text-decoration: underline;
@@ -109,7 +109,7 @@
 a.pricing-action,
 button.pricing-action {
   border: none;
-  background: var(--color-primary, #007bff);
+  background: #FFF;
   color: #000;
   display: block;
   width: 100%;
