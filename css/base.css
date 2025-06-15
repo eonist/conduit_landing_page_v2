@@ -17,7 +17,7 @@
 /* === Body: Base font, background, and text color === */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: chocolate; /* ⚠️ debug: override for development, revert to var(--color-background) for production */
+  background-color: var(--debug-bg-body); /* ⚠️ debug: override for development, revert to var(--color-background) for production */
   color: #FFF;
   margin: 0;
   /* margin-top: 16px;
@@ -29,6 +29,12 @@ body {
 }
 
 /* === CSS Variables: Define color and spacing tokens for reuse === */
+
+/* 
+  Debug backgrounds ON (default):
+  - The :root block below enables all debug background colors.
+  - To turn debug backgrounds OFF, replace this :root block with your production version (see documentation or base.prod.css).
+*/
 :root {
   --color-primary: #FF5900;         /* Brand accent color */
   --color-secondary: #727272;       /* Secondary text color */
@@ -39,7 +45,57 @@ body {
   --spacing-medium: 16px;
   --spacing-large: 24px;
   --spacing-xlarge: 32px;
+
+  --debug-bg-hero-content: transparent;           
+  --debug-bg-header: transparent; /*var(--color-background)*/
+  --debug-bg-header-logo: transparent;            
+  --debug-bg-header-title: transparent;           
+  --debug-bg-features-container: transparent;     
+  --debug-bg-blog-container: transparent;         
+  --debug-bg-body: #161616;       
+  --debug-bg-download-container: transparent;     
+  --debug-bg-pricing-container: transparent;      /*#f8f9fa*/    
+
+  /* Debug background colors (toggle in one place) */
+  /*--debug-bg-hero-content: blue;
+  --debug-bg-header: seagreen;
+  --debug-bg-header-logo: orange;
+  --debug-bg-header-title: orangered;
+  --debug-bg-features-container: blueviolet;
+  --debug-bg-blog-container: mediumvioletred;
+  --debug-bg-body: chocolate;
+  --debug-bg-download-container: darkgreen;
+  --debug-bg-pricing-container: #007bff;*/
 }
+
+/* 
+  To turn debug backgrounds OFF:
+  - Replace the :root block above with your production version, e.g.:
+
+  :root {
+    --color-primary: #FF5900;
+    --color-secondary: #727272;
+    --color-background: #1C1C1C;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #999999;
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+
+  (Do not leave a :root block inside a comment, as this causes CSS syntax errors.)
+*/
 
 /* === Typography Utility Classes === */
 

@@ -13,7 +13,7 @@
 .pricing-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: #007bff; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
+  background-color: var(--debug-bg-pricing-container); /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
 /* === Pricing List: Flex container for pricing cards (ul) ===

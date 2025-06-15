@@ -18,7 +18,7 @@
   padding: var(--spacing-medium /* medium */);
   gap: var(--spacing-large);
   background: transparent;
-  background-color: blue; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
+  background-color: var(--debug-bg-hero-content); /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
 /* === Hero Image: Container for hero image ===

@@ -13,7 +13,7 @@
 .blog-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: mediumvioletred; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
+  background-color: var(--debug-bg-blog-container); /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
 }
 
 /* === Blog List: Flex container for blog cards ===

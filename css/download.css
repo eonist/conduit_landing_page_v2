@@ -13,7 +13,7 @@
 .download-container {
   padding: var(--spacing-medium);
   background: transparent;
-  background-color: darkgreen; /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
+  background-color: var(--debug-bg-download-container); /* ⚠️ debug: override for development, revert to transparent or var(--color-background) for production */
   gap: var(--spacing-large);
 }
 

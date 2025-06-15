@@ -14,7 +14,7 @@
 .header {
   padding-top: var(--spacing-medium /* large */);
   padding-bottom: var(--spacing-medium /**/);
-  background-color: seagreen; /* ⚠️ debug: override for development, revert to var(--color-background) for production */
+  background-color: var(--debug-bg-header); /* ⚠️ debug: override for development, revert to var(--color-background) for production */
 }
 
 /* === Header Container: Flex container for header content ===
@@ -36,14 +36,14 @@
   width: auto;
   margin-right: var(--spacing-small);
   vertical-align: middle;
-  background-color: orange; /* ⚠️ debug: override for development */
+  background-color: var(--debug-bg-header-logo); /* ⚠️ debug: override for development */
 }
 
 /* === Header Title: Main title in the header ===
    NOTE: background-color is set for debugging; remove or update for production. */
 .header-title {
   color: var(--color-text-primary);
-  background-color: orangered; /* ⚠️ debug: override for development */
+  background-color: var(--debug-bg-header-title); /* ⚠️ debug: override for development */
 }
 
 /* === Header Stats: Stats text in the header ===
