@@ -64,9 +64,12 @@
 /* === Download Link Text ===
    Text inside the download button. */
 .download-link-text {
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  color: #000; /* #161616 */
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  text-align: center;
   text-decoration: underline;
   margin: 0;
 }
