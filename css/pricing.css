@@ -82,6 +82,20 @@
 
 /* === Pricing Action: Card action buttons (styled like download button) ===
    Variants for free, monthly, and yearly plans. */
+.pricing-action,
+.pricing-action--free,
+.pricing-action--monthly,
+.pricing-action--yearly,
+a.pricing-action,
+button.pricing-action {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  color: #000 !important;
+  text-align: center !important;
+}
+
 .pricing-action {
   width: 100%;
   box-sizing: border-box;
@@ -90,15 +104,8 @@
   padding: 12px 0;
   border: none;
   border-radius: 8px;
-  /* font-family: 'Inter', Arial, sans-serif;
-     font-size: 16px;
-     font-weight: 600; */
-  font-size: 16px;
-  font-weight: 500;
-  color: #000; /* #fff */
   background: #FFF;
   cursor: pointer;
-  text-align: center;
   text-decoration: underline;
   text-underline-offset: auto;
   text-decoration-thickness: auto;
@@ -133,6 +140,11 @@ button.pricing-action {
 
 /* === Pricing Action Variants === */
 .pricing-action--free {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  font-family: 'Inter', Arial, sans-serif;
+  text-align: center;
   text-decoration: underline;
   text-underline-offset: auto;
   text-decoration-thickness: auto;
